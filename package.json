@@ -1,0 +1,13 @@
+{
+  "name": "js-dev-utils",
+  "version": "1.0.0",
+  "description": "A personal collection of reusable JavaScript utility functions for everyday development",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "keywords": ["utils", "javascript", "helpers", "nodejs"],
+  "author": "Rohan",
+  "license": "MIT"
+}
