@@ -3,12 +3,12 @@ name: 🟩 Daily Dev Commits
 on:
   schedule:
     # All times in UTC → converted to IST (UTC+5:30)
-    - cron: "30 4 * * *"   # 10:00 AM IST - morning session
-    - cron: "30 8 * * *"   # 2:00  PM IST - afternoon session
-    - cron: "30 13 * * *"  # 7:00  PM IST - evening session
-    - cron: "30 17 * * *"  # 11:00 PM IST - night session
+    - cron: "30 4 * * *" # 10:00 AM IST - morning session
+    - cron: "30 8 * * *" # 2:00  PM IST - afternoon session
+    - cron: "30 13 * * *" # 7:00  PM IST - evening session
+    - cron: "30 17 * * *" # 11:00 PM IST - night session
 
-  workflow_dispatch:        # Manual trigger from GitHub UI anytime
+  workflow_dispatch: # Manual trigger from GitHub UI anytime
 
 jobs:
   auto-commit:
@@ -16,14 +16,14 @@ jobs:
 
     steps:
       - name: 📥 Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: ⚙️ Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: 🤖 Run update script
         run: node auto-update.js
@@ -31,7 +31,7 @@ jobs:
       - name: 📤 Commit and push
         run: |
           git config --global user.name "Rohan"
-          git config --global user.email "your-email@gmail.com"
+          git config --global user.email "rohankirdak8756@gmail.com"
           git add -A
           COMMIT_MSG=$(cat .commit-msg)
           git commit -m "$COMMIT_MSG"
