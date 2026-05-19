@@ -47,3 +47,10 @@ function addDays(date, n) {
 function getDayName(date = new Date()) {
   return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
 }
+
+/**
+ * Returns the current timestamp as a readable string
+ */
+function nowReadable() {
+  return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+}
