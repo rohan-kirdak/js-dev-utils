@@ -54,3 +54,10 @@ function getDayName(date = new Date()) {
 function nowReadable() {
   return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 }
+
+/**
+ * Returns the day name (Monday, Tuesday...)
+ */
+function getDayName(date = new Date()) {
+  return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
+}
