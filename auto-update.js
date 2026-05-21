@@ -114,7 +114,7 @@ function makeChange() {
 
   execSync('git add -A');
   execSync(`git config --global user.name "Rohan"`);
-  execSync(`git config --global user.email "your-email@gmail.com"`);
+  execSync(`git config --global user.email "rohankirdak8756@gmail.com"`);
   execSync(`git commit -m "${msg}"`);
 
   console.log(`✅ Committed: ${msg}`);
