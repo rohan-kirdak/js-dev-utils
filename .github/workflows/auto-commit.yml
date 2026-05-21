@@ -2,13 +2,9 @@ name: 🟩 Daily Dev Commits
 
 on:
   schedule:
-    # All times in UTC → converted to IST (UTC+5:30)
-    - cron: "30 4 * * *" # 10:00 AM IST - morning session
-    - cron: "30 8 * * *" # 2:00  PM IST - afternoon session
-    - cron: "30 13 * * *" # 7:00  PM IST - evening session
-    - cron: "30 17 * * *" # 11:00 PM IST - night session
+    - cron: "0 4 * * *"   # Base trigger ~9:30 AM IST (random sleep inside adds variation)
 
-  workflow_dispatch: # Manual trigger from GitHub UI anytime
+  workflow_dispatch:        # Manual trigger from GitHub UI anytime
 
 jobs:
   auto-commit:
@@ -25,14 +21,8 @@ jobs:
         with:
           node-version: "18"
 
-      - name: 🤖 Run update script
+      - name: 🤖 Run update script (handles all commits internally)
         run: node auto-update.js
 
-      - name: 📤 Commit and push
-        run: |
-          git config --global user.name "Rohan"
-          git config --global user.email "rohankirdak8756@gmail.com"
-          git add -A
-          COMMIT_MSG=$(cat .commit-msg)
-          git commit -m "$COMMIT_MSG"
-          git push
+      - name: 📤 Push all commits
+        run: git push
