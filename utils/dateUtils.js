@@ -77,3 +77,10 @@ function addDays(date, n) {
   d.setDate(d.getDate() + n);
   return d;
 }
+
+/**
+ * Returns the day name (Monday, Tuesday...)
+ */
+function getDayName(date = new Date()) {
+  return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
+}
