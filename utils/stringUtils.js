@@ -43,3 +43,10 @@ module.exports = { capitalize, truncate, toSlug, cleanWhitespace };
 function stripSpecialChars(str) {
   return str.replace(/[^a-zA-Z0-9 ]/g, '');
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
