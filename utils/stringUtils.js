@@ -71,3 +71,10 @@ function wordCount(str) {
 function zeroPad(num, size = 2) {
   return String(num).padStart(size, '0');
 }
+
+/**
+ * Checks if a string is a valid email
+ */
+function isEmail(str) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+}
