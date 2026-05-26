@@ -64,3 +64,10 @@ function stripSpecialChars(str) {
 function wordCount(str) {
   return str.trim().split(/\s+/).length;
 }
+
+/**
+ * Pads a number with leading zeros
+ */
+function zeroPad(num, size = 2) {
+  return String(num).padStart(size, '0');
+}
