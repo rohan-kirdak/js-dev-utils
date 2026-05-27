@@ -97,3 +97,10 @@ function sum(arr) {
 function maxVal(arr) {
   return Math.max(...arr);
 }
+
+/**
+ * Returns the max value in an array
+ */
+function maxVal(arr) {
+  return Math.max(...arr);
+}
