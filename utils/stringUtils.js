@@ -120,3 +120,10 @@ function wordCount(str) {
 function zeroPad(num, size = 2) {
   return String(num).padStart(size, '0');
 }
+
+/**
+ * Converts camelCase to snake_case
+ */
+function toSnakeCase(str) {
+  return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
+}
