@@ -134,3 +134,10 @@ function toSnakeCase(str) {
 function stripSpecialChars(str) {
   return str.replace(/[^a-zA-Z0-9 ]/g, '');
 }
+
+/**
+ * Pads a number with leading zeros
+ */
+function zeroPad(num, size = 2) {
+  return String(num).padStart(size, '0');
+}
