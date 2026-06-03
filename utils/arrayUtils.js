@@ -143,3 +143,10 @@ function minVal(arr) {
 function maxVal(arr) {
   return Math.max(...arr);
 }
+
+/**
+ * Returns min value in an array
+ */
+function minVal(arr) {
+  return Math.min(...arr);
+}
