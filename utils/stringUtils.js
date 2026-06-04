@@ -148,3 +148,10 @@ function zeroPad(num, size = 2) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Converts camelCase to snake_case
+ */
+function toSnakeCase(str) {
+  return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
+}
