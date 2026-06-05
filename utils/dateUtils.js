@@ -127,3 +127,10 @@ function addDays(date, n) {
   d.setDate(d.getDate() + n);
   return d;
 }
+
+/**
+ * Checks if a date is in the past
+ */
+function isPast(date) {
+  return new Date(date) < new Date();
+}
