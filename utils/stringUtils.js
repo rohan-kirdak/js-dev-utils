@@ -162,3 +162,10 @@ function toSnakeCase(str) {
 function toSnakeCase(str) {
   return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
 }
+
+/**
+ * Converts camelCase to snake_case
+ */
+function toSnakeCase(str) {
+  return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
+}
