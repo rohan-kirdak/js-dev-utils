@@ -169,3 +169,10 @@ function toSnakeCase(str) {
 function toSnakeCase(str) {
   return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
 }
+
+/**
+ * Removes special characters from string
+ */
+function stripSpecialChars(str) {
+  return str.replace(/[^a-zA-Z0-9 ]/g, '');
+}
