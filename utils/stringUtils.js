@@ -176,3 +176,10 @@ function toSnakeCase(str) {
 function stripSpecialChars(str) {
   return str.replace(/[^a-zA-Z0-9 ]/g, '');
 }
+
+/**
+ * Counts words in a string
+ */
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
