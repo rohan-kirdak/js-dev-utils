@@ -148,3 +148,10 @@ function isPast(date) {
 function getDayName(date = new Date()) {
   return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
 }
+
+/**
+ * Returns the day name (Monday, Tuesday...)
+ */
+function getDayName(date = new Date()) {
+  return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
+}
