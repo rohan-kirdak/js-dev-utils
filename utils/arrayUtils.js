@@ -224,3 +224,10 @@ function minVal(arr) {
 function isEmpty(arr) {
   return !arr || arr.length === 0;
 }
+
+/**
+ * Checks if array is empty
+ */
+function isEmpty(arr) {
+  return !arr || arr.length === 0;
+}
