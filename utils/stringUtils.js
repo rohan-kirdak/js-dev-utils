@@ -211,3 +211,10 @@ function isEmail(str) {
 function zeroPad(num, size = 2) {
   return String(num).padStart(size, '0');
 }
+
+/**
+ * Removes special characters from string
+ */
+function stripSpecialChars(str) {
+  return str.replace(/[^a-zA-Z0-9 ]/g, '');
+}
