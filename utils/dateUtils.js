@@ -192,3 +192,12 @@ function nowIST() {
 function getDayName(date = new Date()) {
   return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
 }
+
+/**
+ * Adds N days to a date
+ */
+function addDays(date, n) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
