@@ -260,3 +260,10 @@ function zeroPad(num, size = 2) {
 function toSnakeCase(str) {
   return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
 }
+
+/**
+ * Counts words in a string
+ */
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
