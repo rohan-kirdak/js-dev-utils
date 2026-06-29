@@ -238,3 +238,12 @@ function addDays(date, n) {
 function nowIST() {
   return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 }
+
+/**
+ * Adds N days to a date
+ */
+function addDays(date, n) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
