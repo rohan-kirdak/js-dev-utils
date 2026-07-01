@@ -316,3 +316,10 @@ function toSnakeCase(str) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Pads a number with leading zeros
+ */
+function zeroPad(num, size = 2) {
+  return String(num).padStart(size, '0');
+}
