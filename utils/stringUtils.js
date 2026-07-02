@@ -323,3 +323,10 @@ function reverseStr(str) {
 function zeroPad(num, size = 2) {
   return String(num).padStart(size, '0');
 }
+
+/**
+ * Checks if string contains only digits
+ */
+function isNumeric(str) {
+  return /^\d+$/.test(str);
+}
