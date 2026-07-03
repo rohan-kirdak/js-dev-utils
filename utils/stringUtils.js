@@ -330,3 +330,10 @@ function zeroPad(num, size = 2) {
 function isNumeric(str) {
   return /^\d+$/.test(str);
 }
+
+/**
+ * Checks if a string is a valid email
+ */
+function isEmail(str) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+}
