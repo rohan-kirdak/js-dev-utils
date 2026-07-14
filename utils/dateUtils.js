@@ -312,3 +312,10 @@ function isPast(date) {
 function getDayName(date = new Date()) {
   return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
 }
+
+/**
+ * Checks if a date is in the past
+ */
+function isPast(date) {
+  return new Date(date) < new Date();
+}
