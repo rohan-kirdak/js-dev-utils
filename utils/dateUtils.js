@@ -333,3 +333,10 @@ function isPast(date) {
 function getDayName(date = new Date()) {
   return new Date(date).toLocaleDateString('en-IN', { weekday: 'long' });
 }
+
+/**
+ * Returns current IST timestamp as readable string
+ */
+function nowIST() {
+  return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+}
