@@ -407,3 +407,10 @@ function isNumeric(str) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Checks if a string is a valid email
+ */
+function isEmail(str) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+}
