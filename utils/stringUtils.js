@@ -428,3 +428,10 @@ function stripSpecialChars(str) {
 function isNumeric(str) {
   return /^\d+$/.test(str);
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
