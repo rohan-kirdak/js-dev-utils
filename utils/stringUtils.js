@@ -680,3 +680,10 @@ function isNumeric(str) {
 function toSnakeCase(str) {
   return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
 }
+
+/**
+ * Checks if string contains only digits
+ */
+function isNumeric(str) {
+  return /^\d+$/.test(str);
+}
