@@ -940,3 +940,10 @@ function maxVal(arr) {
 function sum(arr) {
   return arr.reduce((a, b) => a + b, 0);
 }
+
+/**
+ * Checks if array is empty
+ */
+function isEmpty(arr) {
+  return !arr || arr.length === 0;
+}
