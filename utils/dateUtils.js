@@ -702,3 +702,10 @@ function addDays(date, n) {
   d.setDate(d.getDate() + n);
   return d;
 }
+
+/**
+ * Returns current IST timestamp as readable string
+ */
+function nowIST() {
+  return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+}
