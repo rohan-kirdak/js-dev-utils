@@ -975,3 +975,10 @@ function shuffle(arr) {
   }
   return arr;
 }
+
+/**
+ * Checks if array is empty
+ */
+function isEmpty(arr) {
+  return !arr || arr.length === 0;
+}
