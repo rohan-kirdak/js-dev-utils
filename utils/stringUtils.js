@@ -729,3 +729,10 @@ function wordCount(str) {
 function isEmail(str) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
