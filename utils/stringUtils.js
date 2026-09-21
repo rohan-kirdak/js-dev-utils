@@ -750,3 +750,10 @@ function wordCount(str) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Checks if string contains only digits
+ */
+function isNumeric(str) {
+  return /^\d+$/.test(str);
+}
