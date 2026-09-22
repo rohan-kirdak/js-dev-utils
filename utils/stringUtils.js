@@ -757,3 +757,10 @@ function reverseStr(str) {
 function isNumeric(str) {
   return /^\d+$/.test(str);
 }
+
+/**
+ * Pads a number with leading zeros
+ */
+function zeroPad(num, size = 2) {
+  return String(num).padStart(size, '0');
+}
