@@ -771,3 +771,10 @@ function zeroPad(num, size = 2) {
 function isEmail(str) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
 }
+
+/**
+ * Pads a number with leading zeros
+ */
+function zeroPad(num, size = 2) {
+  return String(num).padStart(size, '0');
+}
