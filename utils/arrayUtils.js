@@ -1084,3 +1084,13 @@ function shuffle(arr) {
 function isEmpty(arr) {
   return !arr || arr.length === 0;
 }
+
+/**
+ * Groups array items by a key
+ */
+function groupBy(arr, key) {
+  return arr.reduce((acc, item) => {
+    (acc[item[key]] = acc[item[key]] || []).push(item);
+    return acc;
+  }, {});
+}
