@@ -792,3 +792,10 @@ function stripSpecialChars(str) {
 function toSnakeCase(str) {
   return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
