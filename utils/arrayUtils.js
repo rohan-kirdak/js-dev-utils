@@ -1101,3 +1101,10 @@ function groupBy(arr, key) {
 function minVal(arr) {
   return Math.min(...arr);
 }
+
+/**
+ * Returns min value in an array
+ */
+function minVal(arr) {
+  return Math.min(...arr);
+}
