@@ -1140,3 +1140,10 @@ function shuffle(arr) {
 function isEmpty(arr) {
   return !arr || arr.length === 0;
 }
+
+/**
+ * Sums all numbers in an array
+ */
+function sum(arr) {
+  return arr.reduce((a, b) => a + b, 0);
+}
