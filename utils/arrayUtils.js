@@ -1154,3 +1154,10 @@ function sum(arr) {
 function isEmpty(arr) {
   return !arr || arr.length === 0;
 }
+
+/**
+ * Returns the max value in an array
+ */
+function maxVal(arr) {
+  return Math.max(...arr);
+}
