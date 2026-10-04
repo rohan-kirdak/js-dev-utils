@@ -827,3 +827,10 @@ function zeroPad(num, size = 2) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Counts words in a string
+ */
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
