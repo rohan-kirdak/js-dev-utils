@@ -1168,3 +1168,13 @@ function maxVal(arr) {
 function maxVal(arr) {
   return Math.max(...arr);
 }
+
+/**
+ * Groups array items by a key
+ */
+function groupBy(arr, key) {
+  return arr.reduce((acc, item) => {
+    (acc[item[key]] = acc[item[key]] || []).push(item);
+    return acc;
+  }, {});
+}
