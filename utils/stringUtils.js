@@ -841,3 +841,10 @@ function wordCount(str) {
 function wordCount(str) {
   return str.trim().split(/\s+/).length;
 }
+
+/**
+ * Counts words in a string
+ */
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
