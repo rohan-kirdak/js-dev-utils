@@ -876,3 +876,10 @@ function toSnakeCase(str) {
 function wordCount(str) {
   return str.trim().split(/\s+/).length;
 }
+
+/**
+ * Checks if string contains only digits
+ */
+function isNumeric(str) {
+  return /^\d+$/.test(str);
+}
