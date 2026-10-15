@@ -897,3 +897,10 @@ function zeroPad(num, size = 2) {
 function zeroPad(num, size = 2) {
   return String(num).padStart(size, '0');
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
