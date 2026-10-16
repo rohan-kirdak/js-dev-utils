@@ -904,3 +904,10 @@ function zeroPad(num, size = 2) {
 function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Reverses a string
+ */
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
