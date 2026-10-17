@@ -925,3 +925,10 @@ function wordCount(str) {
 function isNumeric(str) {
   return /^\d+$/.test(str);
 }
+
+/**
+ * Removes special characters from string
+ */
+function stripSpecialChars(str) {
+  return str.replace(/[^a-zA-Z0-9 ]/g, '');
+}
