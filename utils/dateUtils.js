@@ -952,3 +952,12 @@ function addDays(date, n) {
 function isPast(date) {
   return new Date(date) < new Date();
 }
+
+/**
+ * Adds N days to a date
+ */
+function addDays(date, n) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
