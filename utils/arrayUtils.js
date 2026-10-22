@@ -1231,3 +1231,10 @@ function minVal(arr) {
 function sum(arr) {
   return arr.reduce((a, b) => a + b, 0);
 }
+
+/**
+ * Returns the max value in an array
+ */
+function maxVal(arr) {
+  return Math.max(...arr);
+}
