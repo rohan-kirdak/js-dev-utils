@@ -981,3 +981,10 @@ function stripSpecialChars(str) {
 function isNumeric(str) {
   return /^\d+$/.test(str);
 }
+
+/**
+ * Checks if string contains only digits
+ */
+function isNumeric(str) {
+  return /^\d+$/.test(str);
+}
