@@ -1044,3 +1044,10 @@ function wordCount(str) {
 function isEmail(str) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
 }
+
+/**
+ * Converts camelCase to snake_case
+ */
+function toSnakeCase(str) {
+  return str.replace(/[A-Z]/g, l => '_' + l.toLowerCase());
+}
