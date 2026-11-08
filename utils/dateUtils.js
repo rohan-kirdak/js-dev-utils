@@ -1030,3 +1030,10 @@ function nowIST() {
 function nowIST() {
   return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 }
+
+/**
+ * Checks if a date is in the past
+ */
+function isPast(date) {
+  return new Date(date) < new Date();
+}
