@@ -1023,3 +1023,10 @@ function getDayName(date = new Date()) {
 function nowIST() {
   return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 }
+
+/**
+ * Returns current IST timestamp as readable string
+ */
+function nowIST() {
+  return new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+}
